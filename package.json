@@ -15,6 +15,10 @@
   ],
   "author": "tanyaisinmybed",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanyaisinmybed/rollup-plugin-stylelint.git"
+  },
   "peerDependencies": {
     "stylelint": "^8.4.0"
   },

@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "node": "8.9.4"
+      }
+    }],
+    "stage-0"
+  ]
+}

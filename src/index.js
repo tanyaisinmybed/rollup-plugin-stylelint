@@ -8,18 +8,17 @@ export default function stylelintPlugin(options = {}) {
         name: "stylelint",
         transform(code, id) {
             if (!filter(id)) return;
-            const config = Object.assign({}, options, { code, formatter: "verbose" });
 
             return stylelint
-                .lint(config)
+                .lint({...options, code, formatter: "verbose"})
                 .then(result => {
-                if (result.errored) {
-                throw Error(result.output);
-            }
-        })
-        .catch(error => {
-                throw Error(error);
-        });
+                    if (result.errored) {
+                        throw Error(result.output);
+                    }
+                })
+                .catch(error => {
+                        throw Error(error);
+                });
         }
     };
 }

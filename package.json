@@ -2,9 +2,11 @@
   "name": "rollup-plugin-stylelint",
   "version": "0.0.1",
   "description": "Verify entry point and all imported files with stylelint",
-  "main": "src/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "keywords": [
     "rollup-plugin",
@@ -19,6 +21,11 @@
     "rollup-pluginutils": "^2.0.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.55.1",
+    "rollup-plugin-babel": "^3.0.3",
     "stylelint": "^8.4.0"
   }
 }

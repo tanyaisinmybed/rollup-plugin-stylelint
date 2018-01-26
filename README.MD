@@ -1,4 +1,4 @@
-# rollup-plugin-stylelint
+# rollup-plugin-stylelint (WIP 🚧)
 Verify entry point and all imported files with stylelint
 ## Installation
 ```

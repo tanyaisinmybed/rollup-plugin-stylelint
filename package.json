@@ -6,14 +6,15 @@
   "module": "dist/es/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "rollup-plugin",
     "stylelint"
   ],
   "author": "tanyaisinmybed",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "stylelint": "^8.4.0"
   },

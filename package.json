@@ -20,7 +20,7 @@
     "url": "https://github.com/tanyaisinmybed/rollup-plugin-stylelint.git"
   },
   "peerDependencies": {
-    "stylelint": "^8.4.0"
+    "stylelint": "^7.0.0 || ^8.0.0"
   },
   "dependencies": {
     "rollup-pluginutils": "^2.0.1"

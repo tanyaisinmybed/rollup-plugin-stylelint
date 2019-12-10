@@ -6,7 +6,7 @@ function resultHasErrors(result) {
   return result.results.some(res => res.errored);
 }
 
-function resultHawWarnings(result) {
+function resultHasWarnings(result) {
   return result.results.some(res => res.warnings.length !== 0);
 }
 
@@ -36,7 +36,7 @@ function stylelintPlugin(options = {}) {
           if (result.output) {
             process.stdout.write(result.output);
 
-            if (resultHawWarnings(result) && options.throwOnWarning) {
+            if (resultHasWarnings(result) && options.throwOnWarning) {
               throw new Error('Warning(s) were found');
             }
 
